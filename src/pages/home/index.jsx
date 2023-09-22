@@ -11,7 +11,7 @@ const Home = () => {
     const getData = async () => {
         try {
             const data = await axios.get(
-                "https://ecommerce-api-dummy-a441c517136b.herokuapp.com/v1/api/products?id=${id}"
+                "https://ecommerce-api-dummy-a441c517136b.herokuapp.com/v1/api/products"
             )
             console.log(data, "from axios");
             console.log(data.data, "datanya");
@@ -45,7 +45,7 @@ const Home = () => {
                         return (
                             <Card 
                                 key = {p.id}
-                                imgProd = {p.id}
+                                imgProd = {p.image}
                                 price = {p.price}
                                 name = {p.name}
                                 id = {p.id}

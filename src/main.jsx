@@ -4,12 +4,13 @@ import ReactDOM from 'react-dom/client'
 // import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import Home from './pages/home'
-import Router from 'react-router-dom'
+import Router from './router'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React>
+  <React.StrictMode>
     {/* <App /> */}
+    {/* <Home /> */}
     {/* <h1>hello</h1> */}
     <Router />
-  </React>,
+  </React.StrictMode>,
 )
